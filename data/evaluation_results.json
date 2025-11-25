@@ -1,0 +1,108 @@
+{
+  "model": "../models/quantized_models/t5-small-finetuned-summarization-xsum/",
+  "num_examples": 3,
+  "latency": {
+    "mean_ms": 596.1300999236604,
+    "std_ms": 59.44468271979019,
+    "min_ms": 547.2354998346418,
+    "max_ms": 679.8014999367297
+  },
+  "throughput": {
+    "mean_tokens_per_sec": 468.87974164396365,
+    "std_tokens_per_sec": 17.11559805531338,
+    "min_tokens_per_sec": 445.8775062541255,
+    "max_tokens_per_sec": 486.90683976249943
+  },
+  "memory": {
+    "memory_before_mb": 644.62109375,
+    "memory_after_mb": 726.375,
+    "memory_delta_mb": 81.75390625
+  },
+  "rouge": {
+    "rouge1": {
+      "mean": 0.2847975553857907,
+      "std": 0.14659810295811612,
+      "scores": [
+        0.3764705882352941,
+        0.4,
+        0.07792207792207792
+      ]
+    },
+    "rouge2": {
+      "mean": 0.08561518802482658,
+      "std": 0.06088528822207576,
+      "scores": [
+        0.12048192771084336,
+        0.13636363636363638,
+        0.0
+      ]
+    },
+    "rougeL": {
+      "mean": 0.16895000424412188,
+      "std": 0.08871288024031852,
+      "scores": [
+        0.18823529411764706,
+        0.26666666666666666,
+        0.05194805194805195
+      ]
+    }
+  },
+  "bertscore": {
+    "precision": {
+      "mean": 0.29856568574905396,
+      "std": 0.23690606653690338,
+      "scores": [
+        0.5289983749389648,
+        0.311021089553833,
+        0.0556776188313961
+      ]
+    },
+    "recall": {
+      "mean": 0.10278121381998062,
+      "std": 0.15654884278774261,
+      "scores": [
+        0.2796555459499359,
+        0.04665730521082878,
+        -0.017969198524951935
+      ]
+    },
+    "f1": {
+      "mean": 0.19977064430713654,
+      "std": 0.19214148819446564,
+      "scores": [
+        0.40238285064697266,
+        0.1767561435699463,
+        0.02017296478152275
+      ]
+    }
+  },
+  "per_example_results": [
+    {
+      "source": "A cover letter is a formal document that accompanies your resume when you apply for a job. It serves as an introduction and provides additional context for your application. Here's a breakdown of its various aspects: Purpose The primary purpose of a cover letter is to introduce yourself to the hiring manager and to provide context for your resume. It allows you to elaborate on your qualifications, skills, and experiences in a way that your resume may not fully capture. It's also an opportunity to express your enthusiasm for the role and the company, and to explain why you would be a good fit. Content A typical cover letter includes the following sections: Header: Includes your contact information, the date, and the employer's contact information. Salutation: A greeting to the hiring manager, preferably personalized with their name. Introduction: Briefly introduces who you are and the position you're applying for. Body: This is the core of your cover letter where you discuss your qualifications, experiences, and skills that make you suitable for the job. You can also mention how you can contribute to the company. Conclusion: Summarizes your points and reiterates your enthusiasm for the role. You can also include a call to action, like asking for an interview. Signature: A polite closing ('Sincerely,' 'Best regards,' etc.) followed by your name.",
+      "gold": "A cover letter introduces you to the hiring manager and adds context to your resume. It highlights your key skills, experiences, and interest in the role. A standard cover letter includes your contact details, a personalized greeting, a brief introduction, a body explaining your qualifications, and a closing that reinforces your interest and politely requests next steps.",
+      "pred": "A cover letter containing your qualifications, skills, and experiences is a great opportunity to express your enthusiasm for the hiring manager's role, as well as the company.",
+      "latency_ms": 679.8014999367297,
+      "input_tokens": 295,
+      "output_tokens": 36,
+      "throughput_tokens_per_sec": 486.90683976249943
+    },
+    {
+      "source": "The following Agreement is made and entered into by and between the parties for the purpose of clearly defining the responsibilities, rights, and obligations related to the provision of services. The Provider agrees to deliver all Services with a level of care, diligence, and professional skill that is consistent with applicable laws, regulatory requirements, and generally accepted industry standards. The scope, timing, and performance expectations for the Services shall be detailed in the accompanying exhibits, including but not limited to Exhibit A, which outlines the Fees and payment schedule. The Client agrees to compensate the Provider in accordance with the fee structure set forth in Exhibit A and to provide access, cooperation, and timely information reasonably necessary for the Provider to perform the Services effectively. Either party may terminate this Agreement in the event of a material breach by the other party, provided that written notice is delivered at least thirty (30) days prior to termination and the breaching party is given a reasonable opportunity to cure the breach.",
+      "gold": "The Agreement defines each party’s responsibilities for service delivery. The Provider must perform the work with professional skill and follow legal and industry standards. Details on scope and payment are listed in Exhibit A. The Client agrees to pay on schedule and provide needed information. Either party may end the Agreement after giving thirty days’ notice to fix a material breach.",
+      "pred": "The Provider of the Services of the United Kingdom has agreed to pay a fee to the Provider in the event of a material breach by the Client.",
+      "latency_ms": 547.2354998346418,
+      "input_tokens": 210,
+      "output_tokens": 34,
+      "throughput_tokens_per_sec": 445.8775062541255
+    },
+    {
+      "source": "The patient presented to the clinic with a two-week history of progressively worsening dyspnea, accompanied by intermittent chest discomfort that increased with physical exertion. During the initial clinical evaluation, the patient exhibited an elevated resting heart rate, mild tachypnea, and reduced oxygen saturation levels during minimal activity. The patient denied prior episodes of similar severity but reported a gradual decline in exercise tolerance over the past month. The diagnostic workup began with baseline investigations, including chest radiography and a standard 12-lead ECG. The chest X-ray revealed subtle haziness in the lower lung fields, while the ECG demonstrated non-specific ST-T changes that did not conclusively indicate ischemia but warranted further monitoring. Laboratory studies were ordered to assess inflammatory markers, cardiac enzymes, and arterial blood gases. The differential diagnosis at this stage included infectious pneumonia, an acute exacerbation of chronic obstructive pulmonary disease, early-stage heart failure, and possible cardiac ischemia, given the nature of the chest discomfort.",
+      "gold": "The patient reported two weeks of worsening shortness of breath and activity-related chest discomfort. Examination showed a high heart rate, mild rapid breathing, and low oxygen levels. Tests included a chest X-ray and ECG, which revealed haziness and non-specific changes. Further labs were ordered. Possible causes included pneumonia, COPD flare, early heart failure, or cardiac ischemia.",
+      "pred": "A 24-year-old patient with dyspnea has been diagnosed with gastroedemia (ESG), a new study has shown.",
+      "latency_ms": 561.3532999996096,
+      "input_tokens": 234,
+      "output_tokens": 32,
+      "throughput_tokens_per_sec": 473.854878915266
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+transformers>=4.30.0
+datasets>=2.9.0
+sentencepiece
+torch>=1.12.0
+onnx
+onnxruntime
+onnxruntime-tools
+onnxruntime-extensions
+accelerate
+evaluate
+bert-score
+fastapi
+uvicorn
+numpy
+rouge-score
+sentence-transformers
+optimum[onnxruntime]
+psutil
+hf_xet
+python-dotenv
+openai
+# onnxruntime-quantization

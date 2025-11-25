@@ -1,0 +1,213 @@
+{
+  "local_model": {
+    "model": "Quantized ONNX (t5-small-finetuned-summarization-xsum)",
+    "latency_mean_ms": 795.1191333122551,
+    "latency_std_ms": 69.8001736041332,
+    "throughput_mean_tokens_per_sec": 359.6120385010536,
+    "throughput_std_tokens_per_sec": 81.93112249138923,
+    "memory_before_mb": 661.4453125,
+    "memory_after_mb": 742.06640625,
+    "memory_delta_mb": 80.62109375,
+    "rouge": {
+      "rouge1": {
+        "mean": 0.2847975553857907,
+        "std": 0.14659810295811612,
+        "scores": [
+          0.3764705882352941,
+          0.4,
+          0.07792207792207792
+        ]
+      },
+      "rouge2": {
+        "mean": 0.08561518802482658,
+        "std": 0.06088528822207576,
+        "scores": [
+          0.12048192771084336,
+          0.13636363636363638,
+          0.0
+        ]
+      },
+      "rougeL": {
+        "mean": 0.16895000424412188,
+        "std": 0.08871288024031852,
+        "scores": [
+          0.18823529411764706,
+          0.26666666666666666,
+          0.05194805194805195
+        ]
+      }
+    },
+    "bertscore": {
+      "precision": {
+        "mean": 0.29856568574905396,
+        "std": 0.23690606653690338,
+        "scores": [
+          0.5289983749389648,
+          0.311021089553833,
+          0.0556776188313961
+        ]
+      },
+      "recall": {
+        "mean": 0.10278121381998062,
+        "std": 0.15654884278774261,
+        "scores": [
+          0.2796555459499359,
+          0.04665730521082878,
+          -0.017969198524951935
+        ]
+      },
+      "f1": {
+        "mean": 0.19977064430713654,
+        "std": 0.19214148819446564,
+        "scores": [
+          0.40238285064697266,
+          0.1767561435699463,
+          0.02017296478152275
+        ]
+      }
+    },
+    "per_example": [
+      {
+        "pred": "A cover letter containing your qualifications, skills, and experiences is a great opportunity to express your enthusiasm for the hiring manager's role, as well as the company.",
+        "latency_ms": 696.9532000366598,
+        "input_tokens": 295,
+        "output_tokens": 36,
+        "throughput_tokens_per_sec": 474.9242847046105
+      },
+      {
+        "pred": "The Provider of the Services of the United Kingdom has agreed to pay a fee to the Provider in the event of a material breach by the Client.",
+        "latency_ms": 835.2196998894215,
+        "input_tokens": 210,
+        "output_tokens": 34,
+        "throughput_tokens_per_sec": 292.13870318468815
+      },
+      {
+        "pred": "A 24-year-old patient with dyspnea has been diagnosed with gastroedemia (ESG), a new study has shown.",
+        "latency_ms": 853.1845000106841,
+        "input_tokens": 234,
+        "output_tokens": 32,
+        "throughput_tokens_per_sec": 311.7731276138619
+      }
+    ]
+  },
+  "gpt4_mini": {
+    "model": "GPT-4o-mini",
+    "latency_mean_ms": 5652.248499915004,
+    "latency_std_ms": 166.17878696473974,
+    "throughput_mean_tokens_per_sec": 68.81958704312818,
+    "throughput_std_tokens_per_sec": 4.761463840362771,
+    "memory_before_mb": null,
+    "memory_after_mb": null,
+    "memory_delta_mb": null,
+    "rouge": {
+      "rouge1": {
+        "mean": 0.4818287302495139,
+        "std": 0.019304901054939146,
+        "scores": [
+          0.4727272727272728,
+          0.5086705202312138,
+          0.4640883977900552
+        ]
+      },
+      "rouge2": {
+        "mean": 0.1712566862694126,
+        "std": 0.015475938574023325,
+        "scores": [
+          0.17177914110429446,
+          0.15204678362573099,
+          0.18994413407821228
+        ]
+      },
+      "rougeL": {
+        "mean": 0.37253846548388747,
+        "std": 0.03389755806943241,
+        "scores": [
+          0.32727272727272727,
+          0.3815028901734104,
+          0.4088397790055248
+        ]
+      }
+    },
+    "bertscore": {
+      "precision": {
+        "mean": 0.3169221878051758,
+        "std": 0.049207620322704315,
+        "scores": [
+          0.31374815106391907,
+          0.36764001846313477,
+          0.2693784534931183
+        ]
+      },
+      "recall": {
+        "mean": 0.5609552264213562,
+        "std": 0.04452541470527649,
+        "scores": [
+          0.5097489953041077,
+          0.5825638771057129,
+          0.5905527472496033
+        ]
+      },
+      "f1": {
+        "mean": 0.4369474947452545,
+        "std": 0.03282933309674263,
+        "scores": [
+          0.41091489791870117,
+          0.47382786870002747,
+          0.4260998070240021
+        ]
+      }
+    },
+    "per_example": [
+      {
+        "pred": "A cover letter is a formal document that accompanies a resume during a job application, serving as an introduction and providing context. Its primary purpose is to introduce the applicant to the hiring manager, elaborate on qualifications, and express enthusiasm for the role and company. A typical cover letter includes several sections: a header with contact information, a personalized salutation, an introduction stating the applicant's identity and the position sought, a body detailing relevant qualifications and potential contributions, a conclusion summarizing key points and reiterating interest, and a signature with a polite closing. Overall, it enhances the application by highlighting aspects not fully captured in the resume.",
+        "latency_ms": 5651.744999922812,
+        "input_tokens": 302,
+        "output_tokens": 125,
+        "throughput_tokens_per_sec": 75.55188707307774
+      },
+      {
+        "pred": "This Agreement outlines the responsibilities, rights, and obligations of both parties regarding service provision. The Provider commits to delivering services with care and professionalism, adhering to applicable laws and industry standards. Specific details about the scope, timing, and performance expectations are included in accompanying exhibits, particularly Exhibit A, which specifies fees and the payment schedule. The Client agrees to compensate the Provider as outlined and to provide necessary access and information for effective service delivery. Either party may terminate the Agreement due to a material breach, given that written notice is provided at least 30 days in advance and the breaching party is allowed a reasonable opportunity to rectify the issue.",
+        "latency_ms": 5448.974099941552,
+        "input_tokens": 230,
+        "output_tokens": 126,
+        "throughput_tokens_per_sec": 65.33339918129151
+      },
+      {
+        "pred": "The patient presented with a two-week history of worsening dyspnea and intermittent chest discomfort, particularly during physical activity. Initial evaluation showed an elevated heart rate, mild tachypnea, and low oxygen saturation with minimal exertion. The patient had no previous episodes of this severity but noted a decline in exercise tolerance over the past month. Diagnostic tests included a chest X-ray, which showed haziness in the lower lung fields, and a 12-lead ECG with non-specific ST-T changes. Laboratory studies were ordered to evaluate inflammatory markers, cardiac enzymes, and arterial blood gases. The differential diagnosis considered included infectious pneumonia, acute exacerbation of chronic obstructive pulmonary disease, early-stage heart failure, and potential cardiac ischemia due to the chest discomfort.",
+        "latency_ms": 5856.026399880648,
+        "input_tokens": 235,
+        "output_tokens": 149,
+        "throughput_tokens_per_sec": 65.57347487501531
+      }
+    ]
+  },
+  "comparison_table": {
+    "Metric": [
+      "Latency (ms)",
+      "Throughput (tokens/sec)",
+      "Memory Delta (MB)",
+      "ROUGE-1 (F)",
+      "ROUGE-2 (F)",
+      "ROUGE-L (F)",
+      "BERTScore F1"
+    ],
+    "Local Model": [
+      "795.12 ± 69.80",
+      "359.61 ± 81.93",
+      "80.62",
+      "0.2848 ± 0.1466",
+      "0.0856 ± 0.0609",
+      "0.1690 ± 0.0887",
+      "0.1998 ± 0.1921"
+    ],
+    "GPT-4o-mini": [
+      "5652.25 ± 166.18",
+      "68.82 ± 4.76",
+      "N/A (API)",
+      "0.4818 ± 0.0193",
+      "0.1713 ± 0.0155",
+      "0.3725 ± 0.0339",
+      "0.4369 ± 0.0328"
+    ]
+  }
+}
